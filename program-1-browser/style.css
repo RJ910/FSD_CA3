@@ -1,0 +1,28 @@
+:root{--navy:#163a63;--orange:#f2994a;--bg:#f5f6fa;--ink:#1c2230}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.topbar{background:var(--navy);color:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center}
+.topbar small{color:var(--orange);letter-spacing:.12em;font-size:10px;font-weight:700}
+.topbar h1{margin:2px 0 0;font-size:22px}
+main{max-width:980px;margin:0 auto;padding:28px 20px 60px}
+.eyebrow{color:#d9822b;font-weight:700;letter-spacing:.14em;font-size:11px}
+.hero h2{font-size:42px;margin:8px 0}
+.hero p{color:#555;margin:0 0 22px}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 1px 6px rgba(0,0,0,.08);margin-bottom:18px}
+.form h3,.http h3{margin:0 0 12px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+label{font-size:12px;font-weight:600;display:flex;flex-direction:column;gap:4px}
+input,select{padding:9px 10px;border:1px solid #cfd4de;border-radius:8px;font:inherit;font-size:13px}
+input.invalid,select.invalid{border-color:#d33;background:#fff4f4}
+.error{color:#c62828;min-height:18px;font-size:13px;margin:10px 0}
+.pill{background:var(--orange);color:#111;border:0;border-radius:999px;padding:9px 18px;font-weight:700;cursor:pointer}
+.controls{display:flex;gap:10px;margin:18px 0 6px}
+.controls input{flex:1}
+.status{color:#666;font-size:13px;min-height:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.donor{background:#fff;border-radius:12px;padding:14px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.donor .bg{display:inline-block;background:#fde8e8;color:#b71c1c;font-weight:800;border-radius:8px;padding:6px 12px;font-size:18px}
+.donor h4{margin:10px 0 2px}
+.donor p{margin:2px 0;font-size:13px;color:#555}
+.donor button{margin-top:10px;background:#fff;border:1px solid #d33;color:#d33;border-radius:999px;padding:5px 12px;cursor:pointer;font-size:12px}
+pre{background:#0d1117;color:#c9d1d9;padding:12px;border-radius:8px;overflow:auto;font-size:12px;margin:0}

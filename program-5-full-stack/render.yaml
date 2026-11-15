@@ -1,0 +1,14 @@
+# Render blueprint - backend web service + PostgreSQL database
+services:
+  - type: web
+    name: donor-registry-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server/server.js
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: donor-db, property: connectionString }
+      - key: CLIENT_ORIGIN
+        value: https://your-app.vercel.app
+databases:
+  - name: donor-db

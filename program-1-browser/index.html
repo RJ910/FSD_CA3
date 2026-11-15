@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blood Donor Registry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <small>LIFESAVER • FAST • LOCAL</small>
+      <h1>Blood Donor Registry</h1>
+    </div>
+    <button id="statsBtn" class="pill">Donors (0)</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <small class="eyebrow">BLOOD DONOR REGISTRY</small>
+      <h2>Find a donor. Save a life.</h2>
+      <p>Register new donors, search the registry and filter by blood group.</p>
+    </section>
+
+    <!-- Registration form: DOM events + validation -->
+    <form id="donorForm" class="card form" novalidate>
+      <h3>Register a donor</h3>
+      <div class="row">
+        <label>Name <input id="name" placeholder="Full name" /></label>
+        <label>Age <input id="age" type="number" placeholder="18-65" /></label>
+        <label>Blood group
+          <select id="bloodGroup">
+            <option value="">Select</option>
+            <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          </select>
+        </label>
+        <label>City <input id="city" placeholder="City" /></label>
+        <label>Phone <input id="phone" placeholder="10-digit number" /></label>
+      </div>
+      <p id="formError" class="error" role="alert"></p>
+      <button type="submit" class="pill">Add donor</button>
+    </form>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search by name or city..." />
+      <select id="filter"><option value="all">All blood groups</option></select>
+    </div>
+
+    <p id="status" class="status"></p>
+    <section id="list" class="grid"></section>
+
+    <section class="card http">
+      <h3>HTTP methods &amp; JSON (last request)</h3>
+      <pre id="httpLog">No requests yet.</pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

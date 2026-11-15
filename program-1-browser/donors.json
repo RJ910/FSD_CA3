@@ -1,0 +1,8 @@
+[
+  {"id":1,"name":"Aarav Mehta","age":28,"bloodGroup":"O+","city":"Mumbai","phone":"9820012345"},
+  {"id":2,"name":"Priya Nair","age":34,"bloodGroup":"A+","city":"Pune","phone":"9876543210"},
+  {"id":3,"name":"Rohan Shah","age":25,"bloodGroup":"B+","city":"Mumbai","phone":"9967012345"},
+  {"id":4,"name":"Sneha Kulkarni","age":41,"bloodGroup":"AB-","city":"Nashik","phone":"9922334455"},
+  {"id":5,"name":"Imran Qureshi","age":30,"bloodGroup":"O-","city":"Thane","phone":"9011223344"},
+  {"id":6,"name":"Kavya Iyer","age":22,"bloodGroup":"A-","city":"Mumbai","phone":"9833445566"}
+]
